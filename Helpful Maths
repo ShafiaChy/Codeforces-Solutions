@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char a[100],temp,n,i,j;
+
+    scanf("%s",a);
+
+    n=strlen(a);
+     for(i=0;i<n;i=i+2)
+    {
+        for(j=0;j<i;j=j+2){
+
+
+            if(a[i]<a[j])
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+
+            }
+            
+        }
+    }
+     printf("%s",a);
+
+
+}
